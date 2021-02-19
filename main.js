@@ -22,9 +22,6 @@ function updateValue(e) {
   list.appendChild(addItem);
 };
 
-inputLine.addEventListener('submit', updateValue);
-
-button.addEventListener('click', updateValue );
 
 // Remove items 
 document.addEventListener('click', (e) => {
@@ -33,3 +30,8 @@ document.addEventListener('click', (e) => {
     list.removeChild(choosenItem);
   }
 });
+
+// Event Listener
+inputLine.addEventListener('submit', updateValue);
+
+button.addEventListener('click', updateValue );
