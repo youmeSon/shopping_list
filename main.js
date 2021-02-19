@@ -13,6 +13,7 @@ const button = document.querySelector('.input__button');
 function updateValue(e) { 
   e.preventDefault();
   item = input.value;
+  input.value = '';
   const addItem = document.createElement('div');
   addItem.setAttribute('class', 'list__items');
   addItem.innerHTML =  `
